@@ -37,6 +37,15 @@
             <li class="nav-item">
             <a class="nav-link" href="RegistroAutos.aspx">Registro Autos</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="MuestraClientes.aspx">Muestra Clientes</a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" href="MuestraAutos.aspx">Muestra Autos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="BuscarAuto.aspx">Buscar Auto</a>
+            </li>
             </ul>
             </div>
             </nav>

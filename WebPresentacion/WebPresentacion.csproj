@@ -72,6 +72,7 @@
     <Content Include="IMG\3.jpg" />
     <Content Include="IMG\icono.png" />
     <Content Include="Inicio.aspx" />
+    <Content Include="BuscarAuto.aspx" />
     <Content Include="MuestraAutos.aspx" />
     <Content Include="MuestraClientes.aspx" />
     <Content Include="RegistroAutos.aspx" />
@@ -85,6 +86,13 @@
     </Compile>
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarAuto.aspx.cs">
+      <DependentUpon>BuscarAuto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarAuto.aspx.designer.cs">
+      <DependentUpon>BuscarAuto.aspx</DependentUpon>
     </Compile>
     <Compile Include="MuestraAutos.aspx.cs">
       <DependentUpon>MuestraAutos.aspx</DependentUpon>
