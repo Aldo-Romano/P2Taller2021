@@ -72,10 +72,12 @@
     <Content Include="IMG\3.jpg" />
     <Content Include="IMG\icono.png" />
     <Content Include="Inicio.aspx" />
+    <Content Include="BuscarAuto.aspx" />
     <Content Include="MuestraAutos.aspx" />
     <Content Include="MuestraClientes.aspx" />
     <Content Include="RegistroAutos.aspx" />
     <Content Include="RegistroClientes.aspx" />
+    <Content Include="Revisiones.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +87,13 @@
     </Compile>
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarAuto.aspx.cs">
+      <DependentUpon>BuscarAuto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarAuto.aspx.designer.cs">
+      <DependentUpon>BuscarAuto.aspx</DependentUpon>
     </Compile>
     <Compile Include="MuestraAutos.aspx.cs">
       <DependentUpon>MuestraAutos.aspx</DependentUpon>
@@ -114,6 +123,13 @@
     </Compile>
     <Compile Include="RegistroClientes.aspx.designer.cs">
       <DependentUpon>RegistroClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Revisiones.aspx.cs">
+      <DependentUpon>Revisiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Revisiones.aspx.designer.cs">
+      <DependentUpon>Revisiones.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

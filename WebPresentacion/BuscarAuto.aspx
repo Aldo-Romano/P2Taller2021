@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MuestraAutos.aspx.cs" Inherits="WebPresentacion.MuestraAutos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BuscarAuto.aspx.cs" Inherits="WebPresentacion.MuestraAutoDelCliente" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Mostrar Autos</title>
+    <title>Mostrar Auto del Cliente</title>
 
         <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -13,10 +13,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js""></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
+
 </head>
 <body>
     <form id="form1" runat="server">
-        
         <!--Nav-->
         <div>
             <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
@@ -51,7 +51,19 @@
             </nav>
         </div>
 
-         <br />
+          <!--Formularios-->
+        <div class="form-group" style="width:700px; margin-left:400px; margin-top:50px;">
+        <asp:Label ID="Label2" runat="server" Text="Nombre:"></asp:Label>
+        <asp:TextBox ID="txtNombre" runat="server" class="form-control"></asp:TextBox>
+        <asp:Label ID="Label3" runat="server" Text="Apellido paterno:"></asp:Label>
+        <asp:TextBox ID="txtApp" runat="server" class="form-control"></asp:TextBox>
+        <asp:Label ID="Label4" runat="server" Text="Apellido materno:"></asp:Label>
+        <asp:TextBox ID="txtApm" runat="server" class="form-control"></asp:TextBox>
+        <br />
+        <asp:Button ID="Button2" runat="server" class="btn btn-primary" Text="Buscar Auto"/>
+        </div>
+
+        <br />
         <br />
         <center><div>
             <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
