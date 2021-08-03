@@ -77,6 +77,7 @@
     <Content Include="MuestraClientes.aspx" />
     <Content Include="RegistroAutos.aspx" />
     <Content Include="RegistroClientes.aspx" />
+    <Content Include="Revisiones.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="RegistroClientes.aspx.designer.cs">
       <DependentUpon>RegistroClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Revisiones.aspx.cs">
+      <DependentUpon>Revisiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Revisiones.aspx.designer.cs">
+      <DependentUpon>Revisiones.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
