@@ -31,12 +31,12 @@ namespace WebPresentacion
         {
             Autos temp = new Autos
             {
-                //f_marca = dlF_marca.SelectedValue.
+                f_marca = Convert.ToInt16(dlF_marca.SelectedItem.Value),
                 modelo = txtModelo.Text,
                 año = txtAño.Text,
                 color = txtcolor.Text,
                 placas = txtPlacas.Text,
-                //dueño = dlDueño.SelectedValue.
+                dueño = Convert.ToInt16(dlDueño.SelectedItem.Value)
             };
             string a = "";
             objlog.InsertarAutos(temp, ref a);
