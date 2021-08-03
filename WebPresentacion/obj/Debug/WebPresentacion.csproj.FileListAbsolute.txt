@@ -1,0 +1,2 @@
+D:\Taller2021\Taller2021\WebPresentacion\obj\Debug\WebPresentacion.csprojAssemblyReference.cache
+D:\Taller2021\Taller2021\WebPresentacion\obj\Debug\WebPresentacion.csproj.CoreCompileInputs.cache

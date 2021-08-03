@@ -1,0 +1,11 @@
+D:\Taller2021\Taller2021\ClassLogicaNegocios\bin\Debug\ClassLogicaNegocios.dll
+D:\Taller2021\Taller2021\ClassLogicaNegocios\bin\Debug\ClassLogicaNegocios.pdb
+D:\Taller2021\Taller2021\ClassLogicaNegocios\bin\Debug\ClassAccesoDatos.dll
+D:\Taller2021\Taller2021\ClassLogicaNegocios\bin\Debug\ClassEntidades.dll
+D:\Taller2021\Taller2021\ClassLogicaNegocios\bin\Debug\ClassAccesoDatos.pdb
+D:\Taller2021\Taller2021\ClassLogicaNegocios\bin\Debug\ClassEntidades.pdb
+D:\Taller2021\Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.csprojAssemblyReference.cache
+D:\Taller2021\Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.csproj.CoreCompileInputs.cache
+D:\Taller2021\Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.csproj.CopyComplete
+D:\Taller2021\Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.dll
+D:\Taller2021\Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.pdb
