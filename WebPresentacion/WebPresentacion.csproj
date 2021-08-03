@@ -133,7 +133,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ClassEntidades\ClassEntidades.csproj">
+      <Project>{4bdd7002-4b19-46d8-8ecc-dc12cef82f11}</Project>
+      <Name>ClassEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLogicaNegocios\ClassLogicaNegocios.csproj">
+      <Project>{81d06865-7829-4bb7-8da3-c06c7e477165}</Project>
+      <Name>ClassLogicaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
