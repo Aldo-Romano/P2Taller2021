@@ -41,6 +41,11 @@
             </nav>
         </div>
 
+        <br />
+        <br />
+
+        <asp:Button ID="Button2" runat="server" class="btn btn-primary" Text="Mostrar clientes" OnClick="Button2_Click"/>
+
          <br />
         <br />
         <center><div>

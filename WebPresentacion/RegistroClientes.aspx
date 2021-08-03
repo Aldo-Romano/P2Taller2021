@@ -60,8 +60,7 @@
         </div>
         <br />
         <div style="margin-left:400px;">
-        <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Registrar"/>
-        <asp:Button ID="Button2" runat="server" class="btn btn-primary" Text="Mostrar clientes"/>
+        <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Registrar" OnClick="Button1_Click"/>
         </div>
 
         </div>
