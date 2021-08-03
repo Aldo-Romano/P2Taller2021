@@ -8,5 +8,7 @@ namespace ClassEntidades
 {
     public class Marcas
     {
+        public int id_marca { get; set; }
+        public string marca { get; set; }
     }
 }
