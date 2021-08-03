@@ -50,17 +50,16 @@
             </div>
             </nav>
         </div>
-
-          <br />
+        
         <br />
-
-           <asp:Button ID="Button2" runat="server" class="btn btn-primary" Text="Mostrar autos" OnClick="Button2_Click"/>
-
+        <br />
+        
+        <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Mostrar Autos" OnClick="Button1_Click"/>
 
          <br />
         <br />
         <center><div>
-            <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
+            <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <FooterStyle BackColor="White" ForeColor="#000066" />
                 <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
                 <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />

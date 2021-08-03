@@ -12,26 +12,27 @@ namespace WebPresentacion
 {
     public partial class MuestraAutos : System.Web.UI.Page
     {
-        LogicaNegocios objlog = null;
-
+        LogicaNegocios oblog = null;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack == false)
             {
-                objlog = new LogicaNegocios();
-                Session["objlog"] = objlog;
-            }
-            else
-            {
-                objlog = (LogicaNegocios)Session["objlog"];
+                oblog = new LogicaNegocios();
+                Session["oblog"] = oblog;
             }
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
         {
             string a = "";
-            GridView1.DataSource = objlog.DevuelveAutosID(ref a);
+            GridView1.DataSource = oblog.DevuelveClientesID(ref a);
             GridView1.DataBind();
+
         }
     }
 }
