@@ -19,8 +19,8 @@ namespace ClassLogicaNegocios
         //Insertar Clientes.
         public Boolean InsertarClientes(Clientes nuevoCliente, ref string msjSalida)
         {
-            SqlParameter[] param1 = new SqlParameter[6];
-          
+            SqlParameter[] param1 = new SqlParameter[7];
+
             param1[0] = new SqlParameter
             {
                 ParameterName = "nom",
@@ -84,7 +84,7 @@ namespace ClassLogicaNegocios
                 Value = nuevoCliente.correoCorp
 
             };
-            string sentenciaSql = "insert into Cliente values(@nom,@app,@apm,@cel,@telO,@correoP,@correoC)";
+            string sentenciaSql = "insert into Cliente values(@nom,@app,@apm,@cel,@telO,@correoP,@correoC);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql, obAcc.AbrirConexion(ref msjSalida), ref msjSalida, param1);
@@ -95,8 +95,8 @@ namespace ClassLogicaNegocios
         //Insertar Autos.
         public Boolean InsertarAutos(Autos nuevoAuto, ref string msjSalida)
         {
-            SqlParameter[] param1 = new SqlParameter[5];
-           
+            SqlParameter[] param1 = new SqlParameter[6];
+
             param1[0] = new SqlParameter
             {
                 ParameterName = "marc",
@@ -176,7 +176,7 @@ namespace ClassLogicaNegocios
                 {
                     listaSalida.Add(new Clientes
                     {
-                        
+
                         nombre = (string)datos[0],
                         app = (string)datos[1],
                         apm = (string)datos[2],
@@ -200,6 +200,24 @@ namespace ClassLogicaNegocios
             return listaSalida;
 
         }
+
+        //Mostrar Clientes EN GRIDVIEW
+        public DataTable ClientesGrid(ref string msj)
+        {
+            string query2 = "select * from Cliente";
+            DataSet cont_atarpa = null;
+            DataTable tablaS = null;
+
+            cont_atarpa = obAcc.ConsultaDS(query2, obAcc.AbrirConexion(ref msj), ref msj);
+
+            if(cont_atarpa!=null)
+            {
+                tablaS = cont_atarpa.Tables[0];
+            }
+            return tablaS;
+
+        }
+
         //Mostrar/Devolver Autos.
         public List<Autos> DevuelveAutosID(ref string msj)
         {

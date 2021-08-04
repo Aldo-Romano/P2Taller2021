@@ -18,19 +18,22 @@ namespace WebPresentacion
             if (IsPostBack == false)
             {
                 oblog = new LogicaNegocios();
-                Session["oblog"] = oblog;
+                Session["oblog"] = oblog; 
+
             }
             else
             {
-                oblog = (LogicaNegocios)Session["obj1"];
+                oblog = (LogicaNegocios)Session["oblog"];
             }
+            Label2.Visible = false;
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
             string a = "";
-            GridView1.DataSource = oblog.DevuelveClientesID(ref a);
+            GridView1.DataSource = oblog.ClientesGrid(ref a);
             GridView1.DataBind();
+            Label2.Visible = true;
         }
     }
 }

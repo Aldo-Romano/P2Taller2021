@@ -17,51 +17,42 @@
 <body>
     <form id="form1" runat="server">
         <!--Nav-->
-        <div>
-            <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-            <a class="navbar-brand" href="#">
-            <img src="IMG/icono.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
-             Taller2021</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="RegistroClientes.aspx">Registro Clientes</a>
-            </li>
-            </ul>
-            </div>
-            </nav>
-        </div>
+     
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+          <img src="IMG/icono.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
+          <a class="navbar-brand" href="Inicio.aspx">Taller2021</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link active" href="RegistroClientes.aspx">Registrar Cliente</a>
+          </li>
+          </ul>
+          </div>
+         </div>
+        </nav>
+
+        <br />
+      
 
          <!--Carrusel-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
         <div class="carousel-item active">
-        <img class="d-block w-100" src="IMG/1.jpg" alt="First slide">
+        <img src="IMG/1.jpg" class="d-block w-100"/ height="650">
         </div>
         <div class="carousel-item">
-        <img class="d-block w-100" src="IMG/2.jpg" alt="Second slide">
+        <img src="IMG/2.jpg" class="d-block w-100"  height="650"/>
         </div>
         <div class="carousel-item">
-        <img class="d-block w-100" src="IMG/3.jpg" alt="Third slide">
+        <img src="IMG/3.jpg" class="d-block w-100"  height="650"/>
         </div>
         </div>
-       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-       <span class="sr-only">Previous</span>
-       </a>
-       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-       <span class="sr-only">Next</span>
-       </a>
-       </div>
+        </div>
     </form>
 </body>
 </html>

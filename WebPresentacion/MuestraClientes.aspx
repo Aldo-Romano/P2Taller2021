@@ -17,38 +17,44 @@
 <body>
     <form id="form1" runat="server">
          <!--Nav-->
-        <div>
-            <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-            <a class="navbar-brand" href="#">
-            <img src="IMG/icono.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
-             Taller2021</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="Inicio.aspx">Inicio</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="RegistroClientes.aspx">Registro Clientes</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="MuestraClientes.aspx">Muestra Clientes</a>
-            </li>
-            </ul>
-            </div>
-            </nav>
-        </div>
+
+       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+          <img src="IMG/icono.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
+          <a class="navbar-brand" href="Inicio.aspx">Taller2021</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link active" href="Inicio.aspx">Inicio</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="RegistroClientes.aspx">Registrar Cliente</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="MuestraClientes.aspx">Mostrar Clientes</a>
+          </li>
+          </ul>
+          </div>
+         </div>
+        </nav>
 
         <br />
+      
+
+        <center><asp:Label ID="Label1" runat="server" Text="Mostar todos los clientes registrados en el Taller 2021." Font-Bold="True" Font-Italic="True" Font-Names="Arial Narrow" Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" Font-Underline="True" ForeColor="#0066CC"></asp:Label></center>
+        
         <br />
 
-        <asp:Button ID="Button2" runat="server" class="btn btn-primary" Text="Mostrar clientes" OnClick="Button2_Click"/>
+        <asp:Button ID="Button2" runat="server" class="btn btn-primary" Text="Mostrar Clientes" OnClick="Button2_Click"/>
 
          <br />
         <br />
+
         <center><div>
+            <asp:Label ID="Label2" runat="server" Text="Registro Clientes." Font-Bold="True" Font-Italic="True" Font-Names="Bahnschrift SemiBold SemiConden" Font-Overline="False" Font-Size="Large" Font-Strikeout="False" Font-Underline="True" ForeColor="#0099FF"></asp:Label>
             <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
                 <FooterStyle BackColor="White" ForeColor="#000066" />
                 <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
