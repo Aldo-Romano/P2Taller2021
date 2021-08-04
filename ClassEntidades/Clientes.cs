@@ -8,7 +8,6 @@ namespace ClassEntidades
 {
     public class Clientes
     {
-        public int id_cliente { get; set; }
         public string nombre { get; set; }
         public string app { get; set; }
         public string apm { get; set; }

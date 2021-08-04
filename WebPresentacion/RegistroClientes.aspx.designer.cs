@@ -155,8 +155,7 @@ namespace WebPresentacion {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-<<<<<<< HEAD
-=======
+
         
         /// <summary>
         /// Control Button2.
@@ -166,6 +165,5 @@ namespace WebPresentacion {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
->>>>>>> 487a02c1494862e9bbe27c461cbcf0821051ad6a
     }
 }

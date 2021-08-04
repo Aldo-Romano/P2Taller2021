@@ -20,6 +20,10 @@ namespace WebPresentacion
                 oblog = new LogicaNegocios();
                 Session["oblog"] = oblog;
             }
+            else
+            {
+                oblog = (LogicaNegocios)Session["obj1"];
+            }
         }
 
         protected void Button2_Click(object sender, EventArgs e)

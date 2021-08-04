@@ -8,7 +8,6 @@ namespace ClassEntidades
 {
    public class Autos
     {
-        public int id_Auto { get; set; }
         public int f_marca { get; set; }
         public string modelo { get; set; }
         public string año { get; set; }
