@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebPresentacion
 {
-    public partial class Revisiones : System.Web.UI.Page
+    public partial class RevisionesAuto : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

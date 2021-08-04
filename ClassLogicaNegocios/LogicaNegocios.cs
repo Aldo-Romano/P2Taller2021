@@ -410,16 +410,9 @@ namespace ClassLogicaNegocios
         //Insertar Revisiones.
         public Boolean InsertarRevisiones(Revisiones nuevaRev, ref string msjSalida)
         {
-            SqlParameter[] param1 = new SqlParameter[7];
+            SqlParameter[] param1 = new SqlParameter[6];
+            
             param1[0] = new SqlParameter
-            {
-                ParameterName = "idRev",
-                SqlDbType = SqlDbType.Int,
-                Direction = ParameterDirection.Input,
-                Value = nuevaRev.id_Revision
-
-            };
-            param1[1] = new SqlParameter
             {
                 ParameterName = "Entrada",
                 SqlDbType = SqlDbType.DateTime,
@@ -427,7 +420,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaRev.Entrada
 
             };
-            param1[2] = new SqlParameter
+            param1[1] = new SqlParameter
             {
                 ParameterName = "Falla",
                 SqlDbType = SqlDbType.VarChar,
@@ -436,7 +429,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaRev.Falla
 
             };
-            param1[3] = new SqlParameter
+            param1[2] = new SqlParameter
             {
                 ParameterName = "Dignostico",
                 SqlDbType = SqlDbType.VarChar,
@@ -445,7 +438,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaRev.diagnostico
 
             };
-            param1[4] = new SqlParameter
+            param1[3] = new SqlParameter
             {
                 ParameterName = "Autorizacion",
                 SqlDbType = SqlDbType.Bit,
@@ -453,7 +446,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaRev.Autorizacion
 
             };
-            param1[5] = new SqlParameter
+            param1[4] = new SqlParameter
             {
                 ParameterName = "Auto",
                 SqlDbType = SqlDbType.Int,
@@ -461,7 +454,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaRev.Auto
 
             };
-            param1[6] = new SqlParameter
+            param1[5] = new SqlParameter
             {
                 ParameterName = "Mecanico",
                 SqlDbType = SqlDbType.Int,
@@ -470,7 +463,7 @@ namespace ClassLogicaNegocios
 
             };
 
-            string sentenciaSql = "insert into Revision values(@idRev,@Entrada,@Falla,@Diagnostico,@Autorizacion,@Auto,@Mecanico);";
+            string sentenciaSql = "insert into Revision values(@Entrada,@Falla,@Diagnostico,@Autorizacion,@Auto,@Mecanico);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql, obAcc.AbrirConexion(ref msjSalida), ref msjSalida, param1);

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Revisiones.aspx.cs" Inherits="WebPresentacion.Revisiones" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RevisionesAutos.aspx.cs" Inherits="WebPresentacion.Revisiones" %>
 
 <!DOCTYPE html>
 
@@ -37,7 +37,7 @@
             <a class="nav-link" href="RegistroAutos.aspx">Registro Autos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="Revisiones.aspx">Revisiones</a>
+            <a class="nav-link" href="RevisionesAutos.aspx">Revisiones</a>
             </li>
             </ul>
             </div>
@@ -54,10 +54,15 @@
         <asp:TextBox ID="txtDiag" runat="server" class="form-control"></asp:TextBox>
         <asp:Label ID="Label5" runat="server" Text="Autorización:"></asp:Label>
         <asp:TextBox ID="txtAutori" runat="server" class="form-control"></asp:TextBox>
+        <asp:Label ID="Label1" runat="server" Text="Auto:"></asp:Label>
+        <asp:DropDownList ID="AutosId" runat="server" style="width:700px; height:35px;"></asp:DropDownList>
+        <asp:Label ID="Label6" runat="server" Text="Mecánico:"></asp:Label>
+        <asp:DropDownList ID="MecanicosId" runat="server" style="width:700px; height:35px;"></asp:DropDownList>
         </div>
         <br />
         <div style="margin-left:400px;">
-        <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Registrar"/>
+       <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" class="btn btn-primary"/> 
+     
         </div>
 
 

@@ -77,7 +77,7 @@
     <Content Include="MuestraClientes.aspx" />
     <Content Include="RegistroAutos.aspx" />
     <Content Include="RegistroClientes.aspx" />
-    <Content Include="Revisiones.aspx" />
+    <Content Include="RevisionesAuto.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -124,12 +124,12 @@
     <Compile Include="RegistroClientes.aspx.designer.cs">
       <DependentUpon>RegistroClientes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Revisiones.aspx.cs">
-      <DependentUpon>Revisiones.aspx</DependentUpon>
+    <Compile Include="RevisionesAuto.aspx.cs">
+      <DependentUpon>RevisionesAuto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Revisiones.aspx.designer.cs">
-      <DependentUpon>Revisiones.aspx</DependentUpon>
+    <Compile Include="RevisionesAuto.aspx.designer.cs">
+      <DependentUpon>RevisionesAuto.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -141,7 +141,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ClassEntidades\ClassEntidades.csproj">
+      <Project>{4bdd7002-4b19-46d8-8ecc-dc12cef82f11}</Project>
+      <Name>ClassEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLogicaNegocios\ClassLogicaNegocios.csproj">
+      <Project>{81d06865-7829-4bb7-8da3-c06c7e477165}</Project>
+      <Name>ClassLogicaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
