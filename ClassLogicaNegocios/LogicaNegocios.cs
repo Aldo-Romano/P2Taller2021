@@ -14,7 +14,7 @@ namespace ClassLogicaNegocios
     public class LogicaNegocios
     {
         //Cadena de Conexión.
-        private AccesoDatos obAcc = new AccesoDatos(@"Data Source=LAPTOP-C63MHBI1\SQLEXPRESS2017; Initial Catalog=MiTaller2021; Integrated Security = true;");
+        private AccesoDatos obAcc = new AccesoDatos(@"Data Source=LAPTOP-99LGH8E7\SQLEXPRESS; Initial Catalog=MiTaller2021; Integrated Security = true;");
 
         //Insertar Clientes.
         public Boolean InsertarClientes(Clientes nuevoCliente, ref string msjSalida)
@@ -254,6 +254,22 @@ namespace ClassLogicaNegocios
 
             return listaSalida;
 
+        }
+
+        //DataTable Autos.
+        public DataTable DatosGrid (ref string mens_salida)
+        {
+            string query2 = "select * from Auto";
+            DataSet cont_atrapa = null;
+            DataTable tablaS = null;
+
+            cont_atrapa = obAcc.ConsultaDS(query2, obAcc.AbrirConexion(ref mens_salida), ref mens_salida);
+
+            if (cont_atrapa != null)
+            {
+                tablaS = cont_atrapa.Tables[0];
+            }
+            return tablaS;
         }
 
         //Insertar Marca.

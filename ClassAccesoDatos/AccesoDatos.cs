@@ -62,6 +62,7 @@ namespace ClassAccesoDatos
                 }
                 catch (Exception c)
                 {
+                    DS_Salida = null;
                     msj = "¡Error!" + c.Message;
                 }
                 conexAbierta.Close();

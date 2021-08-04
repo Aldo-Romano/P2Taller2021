@@ -4,3 +4,9 @@ D:\Taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.csprojAssemblyR
 D:\Taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.csproj.CoreCompileInputs.cache
 D:\Taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.dll
 D:\Taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.pdb
+F:\P2Taller2021\P2Taller2021\ClassEntidades\bin\Debug\ClassEntidades.dll
+F:\P2Taller2021\P2Taller2021\ClassEntidades\bin\Debug\ClassEntidades.pdb
+F:\P2Taller2021\P2Taller2021\ClassEntidades\obj\Debug\ClassEntidades.csprojAssemblyReference.cache
+F:\P2Taller2021\P2Taller2021\ClassEntidades\obj\Debug\ClassEntidades.csproj.CoreCompileInputs.cache
+F:\P2Taller2021\P2Taller2021\ClassEntidades\obj\Debug\ClassEntidades.dll
+F:\P2Taller2021\P2Taller2021\ClassEntidades\obj\Debug\ClassEntidades.pdb

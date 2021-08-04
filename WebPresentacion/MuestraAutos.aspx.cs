@@ -30,8 +30,9 @@ namespace WebPresentacion
         protected void Button1_Click(object sender, EventArgs e)
         {
             string a = "";
-            GridView1.DataSource = oblog.DevuelveClientesID(ref a);
+            GridView1.DataSource = oblog.DatosGrid(ref a);
             GridView1.DataBind();
+            Response.Redirect(a);
 
         }
     }
