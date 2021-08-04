@@ -20,6 +20,10 @@ namespace WebPresentacion
                 oblog = new LogicaNegocios();
                 Session["oblog"] = oblog;
             }
+            else
+            {
+                oblog = (LogicaNegocios)Session["oblog"];
+            }
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -32,7 +36,7 @@ namespace WebPresentacion
             string a = "";
             GridView1.DataSource = oblog.DatosGrid(ref a);
             GridView1.DataBind();
-            Response.Redirect(a);
+           // Response.Redirect(a);
 
         }
     }

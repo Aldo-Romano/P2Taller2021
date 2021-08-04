@@ -103,15 +103,8 @@ namespace ClassLogicaNegocios
         public Boolean InsertarAutos(Autos nuevoAuto, ref string msjSalida)
         {
             SqlParameter[] param1 = new SqlParameter[6];
+         
             param1[0] = new SqlParameter
-            {
-                ParameterName = "idAut",
-                SqlDbType = SqlDbType.Int,
-                Direction = ParameterDirection.Input,
-                Value = nuevoAuto.id_Auto
-
-            };
-            param1[1] = new SqlParameter
             {
                 ParameterName = "marc",
                 SqlDbType = SqlDbType.Int,
@@ -119,7 +112,7 @@ namespace ClassLogicaNegocios
                 Value = nuevoAuto.f_marca
 
             };
-            param1[2] = new SqlParameter
+            param1[1] = new SqlParameter
             {
                 ParameterName = "model",
                 SqlDbType = SqlDbType.VarChar,
@@ -128,7 +121,7 @@ namespace ClassLogicaNegocios
                 Value = nuevoAuto.modelo
 
             };
-            param1[3] = new SqlParameter
+            param1[2] = new SqlParameter
             {
                 ParameterName = "anio",
                 SqlDbType = SqlDbType.VarChar,
@@ -137,7 +130,7 @@ namespace ClassLogicaNegocios
                 Value = nuevoAuto.año
 
             };
-            param1[4] = new SqlParameter
+            param1[3] = new SqlParameter
             {
                 ParameterName = "color",
                 SqlDbType = SqlDbType.VarChar,
@@ -146,7 +139,7 @@ namespace ClassLogicaNegocios
                 Value = nuevoAuto.color
 
             };
-            param1[5] = new SqlParameter
+            param1[4] = new SqlParameter
             {
                 ParameterName = "plac",
                 SqlDbType = SqlDbType.VarChar,
@@ -155,7 +148,7 @@ namespace ClassLogicaNegocios
                 Value = nuevoAuto.placas
 
             };
-            param1[6] = new SqlParameter
+            param1[5] = new SqlParameter
             {
                 ParameterName = "duen",
                 SqlDbType = SqlDbType.Int,
@@ -164,7 +157,7 @@ namespace ClassLogicaNegocios
 
             };
 
-            string sentenciaSql = "insert into Auto values(@idAut,@marc,@model,@anio,@color,@plac,@duen);";
+            string sentenciaSql = "insert into Auto values(@marc,@model,@anio,@color,@plac,@duen);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql, obAcc.AbrirConexion(ref msjSalida), ref msjSalida, param1);
@@ -272,18 +265,28 @@ namespace ClassLogicaNegocios
             return tablaS;
         }
 
+        //DataTable Autos.
+        public DataTable DatosGridNom(string nom, string app, string apm, ref string mens_salida)
+        {
+            string query2 = "select marca,modelo,año,color,placas,Nombre,App,ApM from Cliente C inner join Auto A on C.id_cliente = A.dueño " +
+                "inner join Marcas M on A.F_Marca = M.id_Marca where C.Nombre='" + nom + "'and C.App='" + app + "'and  C.ApM='" + apm + "'";
+            DataSet cont_atrapa = null;
+            DataTable tablaS = null;
+
+            cont_atrapa = obAcc.ConsultaDS(query2, obAcc.AbrirConexion(ref mens_salida), ref mens_salida);
+
+            if (cont_atrapa != null)
+            {
+                tablaS = cont_atrapa.Tables[0];
+            }
+            return tablaS;
+        }
+
         //Insertar Marca.
         public Boolean InsertarMarca(Marcas nuevaMarca, ref string msjSalida)
         {
             SqlParameter[] param1 = new SqlParameter[1];
-            param1[0] = new SqlParameter
-            {
-                ParameterName = "idMarca",
-                SqlDbType = SqlDbType.Int,
-                Direction = ParameterDirection.Input,
-                Value = nuevaMarca.id_marca
-            };
-            param1[1] = new SqlParameter
+           param1[0] = new SqlParameter
             {
                 ParameterName = "marca",
                 SqlDbType = SqlDbType.VarChar,
@@ -292,7 +295,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaMarca.marca
 
             };
-            string sentenciaSql = "insert into Marcas values(@idMarca,@marca);";
+            string sentenciaSql = "insert into Marcas values(@marca);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql, obAcc.AbrirConexion(ref msjSalida), ref msjSalida, param1);
@@ -304,14 +307,8 @@ namespace ClassLogicaNegocios
         public Boolean InsertarReparaciones(Reparaciones nuevaReparacion, ref string msjSalida)
         {
             SqlParameter[] param1 = new SqlParameter[4];
+           
             param1[0] = new SqlParameter
-            {
-                ParameterName = "idReparacion",
-                SqlDbType = SqlDbType.Int,
-                Direction = ParameterDirection.Input,
-                Value = nuevaReparacion.id_reparacion
-            };
-            param1[1] = new SqlParameter
             {
                 ParameterName = "detalles",
                 SqlDbType = SqlDbType.NVarChar,
@@ -320,7 +317,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaReparacion.detalles
 
             };
-            param1[2] = new SqlParameter
+            param1[1] = new SqlParameter
             {
                 ParameterName = "garantia",
                 SqlDbType = SqlDbType.VarChar,
@@ -329,7 +326,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaReparacion.garantia
 
             };
-            param1[3] = new SqlParameter
+            param1[2] = new SqlParameter
             {
                 ParameterName = "salida",
                 SqlDbType = SqlDbType.Date,
@@ -337,7 +334,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaReparacion.salida
 
             };
-            param1[4] = new SqlParameter
+            param1[3] = new SqlParameter
             {
                 ParameterName = "fk_revision",
                 SqlDbType = SqlDbType.Int,
@@ -345,7 +342,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaReparacion.Fk_revision
 
             };
-            string sentenciaSql = "insert into Reparacion values(@idReparacion,@detalles,@garantia,@salida,@fk_revision);";
+            string sentenciaSql = "insert into Reparacion values(@detalles,@garantia,@salida,@fk_revision);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql, obAcc.AbrirConexion(ref msjSalida), ref msjSalida, param1);
@@ -371,7 +368,7 @@ namespace ClassLogicaNegocios
                 {
                     listaSalida.Add(new Marcas
                     {
-                        id_marca = (int)datos[0],
+                       id_marca = (int)datos[0],
                         marca = (string)datos[1],
                     });
                 }
@@ -404,11 +401,10 @@ namespace ClassLogicaNegocios
                 {
                     listaSalida.Add(new Reparaciones
                     {
-                        id_reparacion = (int)datos[0],
-                        detalles = (string)datos[1],
-                        garantia = (string)datos[2],
-                        salida = (DateTime)datos[3],
-                        Fk_revision = (int)datos[4],
+                        detalles = (string)datos[0],
+                        garantia = (string)datos[1],
+                        salida = (DateTime)datos[2],
+                        Fk_revision = (int)datos[3],
                     }
                      );
                 }

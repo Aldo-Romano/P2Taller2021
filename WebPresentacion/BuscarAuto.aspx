@@ -60,7 +60,7 @@
         <asp:Label ID="Label4" runat="server" Text="Apellido materno:"></asp:Label>
         <asp:TextBox ID="txtApm" runat="server" class="form-control"></asp:TextBox>
         <br />
-        <asp:Button ID="Button2" runat="server" class="btn btn-primary" Text="Buscar Auto"/>
+        <asp:Button ID="Button2" runat="server" class="btn btn-primary" Text="Buscar Auto" OnClick="Button2_Click"/>
         </div>
 
         <br />
