@@ -67,11 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\sweetalert2.min.css" />
     <Content Include="IMG\1.jpg" />
     <Content Include="IMG\2.jpg" />
     <Content Include="IMG\3.jpg" />
     <Content Include="IMG\icono.png" />
     <Content Include="Inicio.aspx" />
+    <Content Include="js\JavaScript.js" />
+    <Content Include="js\sweetalert2.all.min.js" />
     <Content Include="MuestraClientes.aspx" />
     <Content Include="RegistroClientes.aspx" />
     <Content Include="Web.config" />
@@ -119,6 +122,7 @@
       <Name>ClassLogicaNegocios</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

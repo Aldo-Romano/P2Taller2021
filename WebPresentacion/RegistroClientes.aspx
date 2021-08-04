@@ -13,6 +13,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js""></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
+     <!--SweetAlert-->
+    <link href="css/sweetalert2.min.css" rel="stylesheet" />
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+
 </head>
 <body>
     <form id="form1" runat="server">

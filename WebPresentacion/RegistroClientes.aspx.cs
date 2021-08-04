@@ -30,20 +30,29 @@ namespace WebPresentacion
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Clientes temp = new Clientes()
+            if(txtNombre.Text != "" && txtApp.Text != "" && txtApm.Text != "" && txtcelular.Text != "" && txtTelOficina.Text != "" && txtCorreoPer.Text != "" && txtCorreoCorp.Text != "")
             {
-                nombre = txtNombre.Text,
-                app = txtApp.Text,
-                apm = txtApm.Text,
-                celular = txtcelular.Text,
-                telOficina = txtTelOficina.Text,
-                correoPer = txtCorreoPer.Text,
-                correoCorp = txtCorreoCorp.Text
-            };
+                Clientes temp = new Clientes()
+                {
+                    nombre = txtNombre.Text,
+                    app = txtApp.Text,
+                    apm = txtApm.Text,
+                    celular = txtcelular.Text,
+                    telOficina = txtTelOficina.Text,
+                    correoPer = txtCorreoPer.Text,
+                    correoCorp = txtCorreoCorp.Text
+                };
 
-            string ms = "";
-            obj1.InsertarClientes(temp, ref ms);
-            txtApp.Text = ms;
+                string ms = "";
+                obj1.InsertarClientes(temp, ref ms);
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg1", "msbox('¡Insertado!','"+ms+ "','success')", true);
+            }
+            else
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg2", "msbox('¡Error!','Inserte todos los datos','error')", true);
+            }
+
+           
         }
     }
 }
