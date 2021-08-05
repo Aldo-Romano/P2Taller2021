@@ -79,7 +79,8 @@ namespace WebPresentacion
             };
             string a = "";
             objlog.InsertarAutos(temp, ref a);
-            txtModelo.Text = a;
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "msg1", "msbox('¡Insertado!','" + a + "','success')", true);
+
         }
     }
 }

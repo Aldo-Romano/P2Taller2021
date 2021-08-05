@@ -13,43 +13,35 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js""></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
+
+
 </head>
 <body>
     <form id="form1" runat="server">
         
         <!--Nav-->
-        <div>
-            <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-            <a class="navbar-brand" href="#">
-            <img src="IMG/icono.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
-             Taller2021</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="Inicio.aspx">Inicio</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="RegistroClientes.aspx">Registro Clientes</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="RegistroAutos.aspx">Registro Autos</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="MuestraClientes.aspx">Muestra Clientes</a>
-            </li>
-             <li class="nav-item">
-            <a class="nav-link" href="MuestraAutos.aspx">Muestra Autos</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="BuscarAuto.aspx">Buscar Auto</a>
-            </li>
-            </ul>
-            </div>
-            </nav>
-        </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+          <img src="IMG/icono.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
+          <a class="navbar-brand" href="Inicio.aspx">Taller2021</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link active" href="MuestraAutos.aspx">Muestrar Autos</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="RegistroAutos.aspx">Registrar Autos</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="BuscarAuto.aspx">Buscar Autos</a>
+          </li>
+          </ul>
+          </div>
+         </div>
+        </nav>
         
         <br />
         <br />

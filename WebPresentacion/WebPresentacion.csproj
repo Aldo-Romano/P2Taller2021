@@ -72,6 +72,7 @@
     <Content Include="IMG\3.jpg" />
     <Content Include="IMG\icono.png" />
     <Content Include="BuscarAuto.aspx" />
+    <Content Include="js\JavaScript.js" />
     <Content Include="MuestraAutos.aspx" />
     <Content Include="RegistroAutos.aspx" />
     <Content Include="Web.config" />
@@ -118,6 +119,9 @@
       <Project>{81d06865-7829-4bb7-8da3-c06c7e477165}</Project>
       <Name>ClassLogicaNegocios</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
