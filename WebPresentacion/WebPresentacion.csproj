@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BuscarAutoHistorial.aspx" />
     <Content Include="IMG\1.jpg" />
     <Content Include="IMG\2.jpg" />
     <Content Include="IMG\3.jpg" />
@@ -77,10 +78,18 @@
     <Content Include="MuestraClientes.aspx" />
     <Content Include="RegistroAutos.aspx" />
     <Content Include="RegistroClientes.aspx" />
-    <Content Include="RevisionesAuto.aspx" />
+    <Content Include="ReparacionAutos.aspx" />
+    <Content Include="RevisionEnAutos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarAutoHistorial.aspx.cs">
+      <DependentUpon>BuscarAutoHistorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarAutoHistorial.aspx.designer.cs">
+      <DependentUpon>BuscarAutoHistorial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -124,12 +133,19 @@
     <Compile Include="RegistroClientes.aspx.designer.cs">
       <DependentUpon>RegistroClientes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RevisionesAuto.aspx.cs">
-      <DependentUpon>RevisionesAuto.aspx</DependentUpon>
+    <Compile Include="ReparacionAutos.aspx.cs">
+      <DependentUpon>ReparacionAutos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RevisionesAuto.aspx.designer.cs">
-      <DependentUpon>RevisionesAuto.aspx</DependentUpon>
+    <Compile Include="ReparacionAutos.aspx.designer.cs">
+      <DependentUpon>ReparacionAutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RevisionEnAutos.aspx.cs">
+      <DependentUpon>RevisionEnAutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RevisionEnAutos.aspx.designer.cs">
+      <DependentUpon>RevisionEnAutos.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

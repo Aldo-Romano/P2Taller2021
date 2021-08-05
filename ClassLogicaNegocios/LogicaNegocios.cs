@@ -14,7 +14,7 @@ namespace ClassLogicaNegocios
     public class LogicaNegocios
     {
         //Cadena de Conexión.
-        private AccesoDatos obAcc = new AccesoDatos(@"Data Source=LAPTOP-C63MHBI1\SQLEXPRESS2017; Initial Catalog=MiTaller2021; Integrated Security = true;");
+        private AccesoDatos obAcc = new AccesoDatos(@"Data Source=ISMARI; Initial Catalog=MiTaller2021; Integrated Security = true;");
 
         //Insertar Clientes.
         public Boolean InsertarClientes(Clientes nuevoCliente, ref string msjSalida)
@@ -288,14 +288,8 @@ namespace ClassLogicaNegocios
         public Boolean InsertarReparaciones(Reparaciones nuevaReparacion, ref string msjSalida)
         {
             SqlParameter[] param1 = new SqlParameter[4];
+           
             param1[0] = new SqlParameter
-            {
-                ParameterName = "idReparacion",
-                SqlDbType = SqlDbType.Int,
-                Direction = ParameterDirection.Input,
-                Value = nuevaReparacion.id_reparacion
-            };
-            param1[1] = new SqlParameter
             {
                 ParameterName = "detalles",
                 SqlDbType = SqlDbType.NVarChar,
@@ -304,7 +298,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaReparacion.detalles
 
             };
-            param1[2] = new SqlParameter
+            param1[1] = new SqlParameter
             {
                 ParameterName = "garantia",
                 SqlDbType = SqlDbType.VarChar,
@@ -313,7 +307,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaReparacion.garantia
 
             };
-            param1[3] = new SqlParameter
+            param1[2] = new SqlParameter
             {
                 ParameterName = "salida",
                 SqlDbType = SqlDbType.Date,
@@ -321,7 +315,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaReparacion.salida
 
             };
-            param1[4] = new SqlParameter
+            param1[3] = new SqlParameter
             {
                 ParameterName = "fk_revision",
                 SqlDbType = SqlDbType.Int,
@@ -329,7 +323,7 @@ namespace ClassLogicaNegocios
                 Value = nuevaReparacion.Fk_revision
 
             };
-            string sentenciaSql = "insert into Reparacion values(@idReparacion,@detalles,@garantia,@salida,@fk_revision);";
+            string sentenciaSql = "insert into Reparacion values(@detalles,@garantia,@salida,@fk_revision);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql, obAcc.AbrirConexion(ref msjSalida), ref msjSalida, param1);
@@ -463,7 +457,7 @@ namespace ClassLogicaNegocios
 
             };
 
-            string sentenciaSql = "insert into Revision values(@Entrada,@Falla,@Diagnostico,@Autorizacion,@Auto,@Mecanico);";
+            string sentenciaSql = "insert into Revision values(@Entrada,@Falla,@Dignostico,@Autorizacion,@Auto,@Mecanico);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql, obAcc.AbrirConexion(ref msjSalida), ref msjSalida, param1);
@@ -491,15 +485,11 @@ namespace ClassLogicaNegocios
                     listaSalida.Add(new Revisiones
                     {
                         id_Revision = (int)datos[0],
-                        Entrada = (DateTime)datos[1],
-                        Falla = (string)datos[2],
                         diagnostico = (string)datos[3],
-                        Autorizacion = (byte)datos[4],
-                        Auto = (int)datos[5],
-                        Mecanico = (int)datos[6]
+                        
 
                     }
-                     );
+                );
                 }
 
             }
@@ -552,6 +542,23 @@ namespace ClassLogicaNegocios
 
             return listaSalida;
 
+        }
+
+        public DataTable GridHistAuto(string placas, ref string mens_salida)
+        {
+            string query2 = "select Nombre,App,Apm,Entrada,Falla,diagnostico,Modelo,año,placas,Detalles,Garantia,Salida from Revision r inner join Mecanico m on r.Mecanico = m.id_Tecnico inner join Auto a on r.Auto=a.Id_Auto inner join Reparacion rp on r.id_Revision=rp.Fk_Revision where placas ='" + placas + "'";
+
+
+            DataSet cont_atrapa = null;
+            DataTable tablaS = null;
+
+            cont_atrapa = obAcc.ConsultaDS(query2, obAcc.AbrirConexion(ref mens_salida), ref mens_salida);
+
+            if (cont_atrapa != null)
+            {
+                tablaS = cont_atrapa.Tables[0];
+            }
+            return tablaS;
         }
 
     }

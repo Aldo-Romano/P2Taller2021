@@ -4,3 +4,9 @@ D:\Taller2021\Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.csprojAssem
 D:\Taller2021\Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.csproj.CoreCompileInputs.cache
 D:\Taller2021\Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.dll
 D:\Taller2021\Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.pdb
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassAccesoDatos\bin\Debug\ClassAccesoDatos.dll
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassAccesoDatos\bin\Debug\ClassAccesoDatos.pdb
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.csprojAssemblyReference.cache
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.dll
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.pdb

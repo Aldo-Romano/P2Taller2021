@@ -1,0 +1,11 @@
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\bin\Debug\ClassLogicaNegocios.dll
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\bin\Debug\ClassLogicaNegocios.pdb
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\bin\Debug\ClassAccesoDatos.dll
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\bin\Debug\ClassEntidades.dll
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\bin\Debug\ClassAccesoDatos.pdb
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\bin\Debug\ClassEntidades.pdb
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.csprojAssemblyReference.cache
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.csproj.CopyComplete
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.dll
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\Repositorio\P2Taller2021\ClassLogicaNegocios\obj\Debug\ClassLogicaNegocios.pdb
