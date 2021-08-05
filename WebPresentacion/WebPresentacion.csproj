@@ -68,16 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BuscarAutoHistorial.aspx" />
+    <Content Include="css\sweetalert2.min.css" />
     <Content Include="IMG\1.jpg" />
     <Content Include="IMG\2.jpg" />
     <Content Include="IMG\3.jpg" />
     <Content Include="IMG\icono.png" />
-    <Content Include="Inicio.aspx" />
-    <Content Include="BuscarAuto.aspx" />
-    <Content Include="MuestraAutos.aspx" />
-    <Content Include="MuestraClientes.aspx" />
-    <Content Include="RegistroAutos.aspx" />
-    <Content Include="RegistroClientes.aspx" />
+    <Content Include="js\JavaScript.js" />
+    <Content Include="js\sweetalert2.all.min.js" />
     <Content Include="ReparacionAutos.aspx" />
     <Content Include="RevisionEnAutos.aspx" />
     <Content Include="Web.config" />
@@ -90,49 +87,7 @@
     <Compile Include="BuscarAutoHistorial.aspx.designer.cs">
       <DependentUpon>BuscarAutoHistorial.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.aspx.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Inicio.aspx.designer.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BuscarAuto.aspx.cs">
-      <DependentUpon>BuscarAuto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BuscarAuto.aspx.designer.cs">
-      <DependentUpon>BuscarAuto.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MuestraAutos.aspx.cs">
-      <DependentUpon>MuestraAutos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MuestraAutos.aspx.designer.cs">
-      <DependentUpon>MuestraAutos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MuestraClientes.aspx.cs">
-      <DependentUpon>MuestraClientes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MuestraClientes.aspx.designer.cs">
-      <DependentUpon>MuestraClientes.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistroAutos.aspx.cs">
-      <DependentUpon>RegistroAutos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RegistroAutos.aspx.designer.cs">
-      <DependentUpon>RegistroAutos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="RegistroClientes.aspx.cs">
-      <DependentUpon>RegistroClientes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RegistroClientes.aspx.designer.cs">
-      <DependentUpon>RegistroClientes.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ReparacionAutos.aspx.cs">
       <DependentUpon>ReparacionAutos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,6 +122,7 @@
       <Name>ClassLogicaNegocios</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

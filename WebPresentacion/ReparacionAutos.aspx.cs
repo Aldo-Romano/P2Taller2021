@@ -62,12 +62,11 @@ namespace WebPresentacion
                 string ms = "";
                 obj1.InsertarReparaciones(temp, ref ms);
 
-                txtDetalles.Text = ms;
-                //  Page.ClientScript.RegisterStartupScript(this.GetType(), "msg1", "msbox('¡Insertado!','" + ms + "','success')", true);
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg1", "msbox('¡Insertado!','" + ms + "','success')", true);
             }
             else
             {
-                //Page.ClientScript.RegisterStartupScript(this.GetType(), "msg2", "msbox('¡Error!','Inserte todos los datos','error')", true);
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg2", "msbox('¡Error!','Inserte todos los datos','error')", true);
             }
         }
     }

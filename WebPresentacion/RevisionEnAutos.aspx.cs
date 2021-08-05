@@ -79,12 +79,11 @@ namespace WebPresentacion
                 string ms = "";
                 obj1.InsertarRevisiones(temp, ref ms);
 
-                txtDiag.Text = ms;
-              //  Page.ClientScript.RegisterStartupScript(this.GetType(), "msg1", "msbox('¡Insertado!','" + ms + "','success')", true);
+               Page.ClientScript.RegisterStartupScript(this.GetType(), "msg1", "msbox('¡Insertado!','" + ms + "','success')", true);
             }
             else
             {
-                //Page.ClientScript.RegisterStartupScript(this.GetType(), "msg2", "msbox('¡Error!','Inserte todos los datos','error')", true);
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg2", "msbox('¡Error!','Inserte todos los datos','error')", true);
             }
         }
     }
