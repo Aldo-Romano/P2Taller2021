@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegistroClientes.aspx.cs" Inherits="WebPresentacion.RegistroClientes" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Revisiones.aspx.cs" Inherits="WebPresentacion.Revisiones" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Registro Clientes</title>
+    <title>Revisiones</title>
 
      <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -16,7 +16,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-         <!--Nav-->
+        <!--Nav-->
         <div>
             <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
             <a class="navbar-brand" href="#">
@@ -36,34 +36,31 @@
             <li class="nav-item">
             <a class="nav-link" href="RegistroAutos.aspx">Registro Autos</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Revisiones.aspx">Revisiones</a>
+            </li>
             </ul>
             </div>
             </nav>
         </div>
 
-             <!--Formularios-->
+          <!--Formularios-->
         <div class="form-group" style="width:700px; margin-left:400px; margin-top:50px;">
-        <asp:Label ID="Label2" runat="server" Text="Nombre:"></asp:Label>
-        <asp:TextBox ID="txtNombre" runat="server" class="form-control"></asp:TextBox>
-        <asp:Label ID="Label3" runat="server" Text="Apellido paterno:"></asp:Label>
-        <asp:TextBox ID="txtApp" runat="server" class="form-control"></asp:TextBox>
-        <asp:Label ID="Label4" runat="server" Text="Apellido materno:"></asp:Label>
-        <asp:TextBox ID="txtApm" runat="server" class="form-control"></asp:TextBox>
-        <asp:Label ID="Label5" runat="server" Text="Celular:"></asp:Label>
-        <asp:TextBox ID="txtcelular" runat="server" class="form-control"></asp:TextBox>
-        <asp:Label ID="Label6" runat="server" Text="Teléfono de oficina:"></asp:Label>
-        <asp:TextBox ID="txtTelOficina" runat="server" class="form-control"></asp:TextBox>
-        <asp:Label ID="Label7" runat="server" Text="Correo personal:"></asp:Label>
-        <asp:TextBox ID="txtCorreoPer" runat="server" class="form-control"></asp:TextBox>
-        <asp:Label ID="Label8" runat="server" Text="Correo corporativo:"></asp:Label>
-        <asp:TextBox ID="txtCorreoCorp" runat="server" class="form-control"></asp:TextBox>
+        <asp:Label ID="Label2" runat="server" Text="Entrada:"></asp:Label>
+       <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+        <asp:Label ID="Label3" runat="server" Text="Falla:"></asp:Label>
+        <asp:TextBox ID="txtFalla" runat="server" class="form-control"></asp:TextBox>
+        <asp:Label ID="Label4" runat="server" Text="Diagnostico:"></asp:Label>
+        <asp:TextBox ID="txtDiag" runat="server" class="form-control"></asp:TextBox>
+        <asp:Label ID="Label5" runat="server" Text="Autorización:"></asp:Label>
+        <asp:TextBox ID="txtAutori" runat="server" class="form-control"></asp:TextBox>
         </div>
         <br />
         <div style="margin-left:400px;">
-        <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Registrar" OnClick="Button1_Click"/>
+        <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Registrar"/>
         </div>
 
-        </div>
+
     </form>
 </body>
 </html>
